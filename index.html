@@ -23,13 +23,126 @@
   </head>
   <body>
     <div class="page-wrapper">
+      <!-- Header: Mobile Navigation -->
+      <div class="mobile-header">
+        <div class="logo">
+          <a href=""><span class="web">Web</span>Studio</a>
+        </div>
+        <a class="js-open-menu">
+          <svg
+            class="burger-menu"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 22"
+            style="enable-background: new 0 0 32 22"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #2e2f42;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M30.9,21.5H1.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h29.5c0.8,0,1.5,0.7,1.5,1.5S31.7,21.5,30.9,21.5z
+                  M30.9,12.2H1.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h29.5c0.8,0,1.5,0.7,1.5,1.5S31.7,12.2,30.9,12.2z M30.9,2.9H1.3
+                  c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h29.5c0.8,0,1.5,0.7,1.5,1.5S31.7,2.9,30.9,2.9z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu close-btn">
+          <svg>
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-contacts">
+          <nav>
+            <ul class="mobile-menu-nav">
+              <li>
+                <h2>
+                  <a href="/index.html" class="mobile-active">Studio</a>
+                </h2>
+              </li>
+              <li>
+                <h2>
+                  <a href="portfolio.html">Portfolio</a>
+                </h2>
+              </li>
+              <li>
+                <h2>
+                  <a>Contacts</a>
+                </h2>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-contacts">
+            <li>
+              <h2>
+                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </h2>
+            </li>
+            <li>
+              <h3>
+                <a href="emailto:info@devstudio.com">info@devstudio.com</a>
+              </h3>
+            </li>
+          </ul>
+        </div>
+        <div class="social-icon-holder">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="social-icon"
+          >
+            <svg width="16" height="16">
+              <use href="./icons/symbol-defs.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="social-icon"
+          >
+            <svg width="16" height="16">
+              <use href="./icons/symbol-defs.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="social-icon"
+          >
+            <svg width="16" height="16">
+              <use href="./icons/symbol-defs.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="social-icon"
+          >
+            <svg width="16" height="16">
+              <use href="./icons/symbol-defs.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
       <!-- Header: Navigation bar -->
       <header class="header">
         <div class="container-row">
           <div class="logo">
-            <a href="/index.html" class="nav-link"
-              ><span class="logo-text">Web</span>Studio</a
-            >
+            <a href="/index.html"><span class="web">Web</span>Studio</a>
           </div>
           <nav>
             <ul class="navigation">
@@ -40,12 +153,15 @@
           </nav>
           <ul class="contacts">
             <li>
-              <a href="emailto:info@devstudio.com" class="text"
-                >info@devstudio.com</a
-              >
+              <p>
+                <a href="emailto:info@devstudio.com">info@devstudio.com</a>
+              </p>
             </li>
+
             <li>
-              <a href="tel:+110001111111" class="text">+11 (000) 111-11-11</a>
+              <p>
+                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </p>
             </li>
           </ul>
         </div>
@@ -54,7 +170,7 @@
         <!-- Hero section -->
         <section class="hero">
           <div class="container-column">
-            <h1 class="title">Effective Solutions for Your Business</h1>
+            <h1>Effective Solutions for Your Business</h1>
             <button
               type="button"
               class="order-button button-text"
@@ -65,65 +181,83 @@
           </div>
         </section>
         <!-- Features section -->
-        <section class="section-padding">
+        <section class="features section-padding">
           <div class="container-cards">
             <ul class="cards">
-              <li>
-                <div class="icon-holder">
-                  <svg width="64" height="64">
-                    <use href="./icons/symbol-defs.svg#icon-group"></use>
-                  </svg>
+              <li class="cards-item">
+                <div class="card">
+                  <div class="icon-holder">
+                    <svg width="64" height="64">
+                      <use href="./icons/symbol-defs.svg#icon-group"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="card-title">Strategy</h2>
+                    <p class="text">
+                      Our goal is to identify the business problem to walk away
+                      with the perfect and creative solution.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="title-h3">Strategy</h3>
-                <p class="text">
-                  Our goal is to identify the business problem to walk away with
-                  the perfect and creative solution.
-                </p>
               </li>
-              <li>
-                <div class="icon-holder">
-                  <svg width="64" height="64">
-                    <use href="./icons/symbol-defs.svg#icon-clock-1"></use>
-                  </svg>
+              <li class="cards-item">
+                <div class="card">
+                  <div class="icon-holder">
+                    <svg width="64" height="64">
+                      <use href="./icons/symbol-defs.svg#icon-clock-1"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="card-title">Punctuality</h2>
+                    <p class="text">
+                      Bring the key message to the brand's audience for the best
+                      price within the shortest possible time.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="title-h3">Punctuality</h3>
-                <p class="text">
-                  Bring the key message to the brand's audience for the best
-                  price within the shortest possible time.
-                </p>
               </li>
-              <li>
-                <div class="icon-holder">
-                  <svg width="64" height="64">
-                    <use href="./icons/symbol-defs.svg#icon-diagram-1"></use>
-                  </svg>
+              <li class="cards-item">
+                <div class="card">
+                  <div class="icon-holder">
+                    <svg width="64" height="64">
+                      <use href="./icons/symbol-defs.svg#icon-diagram-1"></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="card-title">Diligence</h2>
+                    <p class="text">
+                      Research and confirm brands that present the strongest
+                      digital growth opportunities and minimize risk.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="title-h3">Diligence</h3>
-                <p class="text">
-                  Research and confirm brands that present the strongest digital
-                  growth opportunities and minimize risk.
-                </p>
               </li>
-              <li>
-                <div class="icon-holder">
-                  <svg width="64" height="64">
-                    <use href="./icons/symbol-defs.svg#icon-astronaut-1"></use>
-                  </svg>
+              <li class="cards-item">
+                <div class="card">
+                  <div class="icon-holder">
+                    <svg width="64" height="64">
+                      <use
+                        href="./icons/symbol-defs.svg#icon-astronaut-1"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="card-title">Technologies</h2>
+                    <p class="text">
+                      Design practice focused on digital experiences. We bring
+                      forth a deep passion for problem-solving.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="title-h3">Technologies</h3>
-                <p class="text">
-                  Design practice focused on digital experiences. We bring forth
-                  a deep passion for problem-solving.
-                </p>
               </li>
             </ul>
           </div>
         </section>
         <!-- Section: What are we doing -->
         <section class="section section-padding">
-          <div class="container-column position">
-            <h2 class="title-h2">What are we doing</h2>
-            <div class="our-team-cards">
+          <div class="container-column">
+            <h2>What are we doing</h2>
+            <div class="our-team-cards padding-top">
               <img src="./images/website.jpg" alt="Website on PC" width="376" />
               <img
                 src="./images/application.jpg"
@@ -141,8 +275,8 @@
         <!-- Section: Our Team -->
         <section class="section-padding">
           <div class="our-team container-column">
-            <h2 class="title-h2">Our Team</h2>
-            <div class="our-team-cards">
+            <h2>Our Team</h2>
+            <div class="our-team-cards padding-top">
               <div class="card team-card">
                 <img
                   src="./images/markg.jpg"
@@ -150,8 +284,8 @@
                   width="272"
                 />
                 <div class="body">
-                  <h3 class="title-h3">Mark Guerrero</h3>
-                  <p class="text">Product Designer</p>
+                  <h3>Mark Guerrero</h3>
+                  <p>Product Designer</p>
                   <div class="social-icon-holder">
                     <a
                       href="https://www.instagram.com/"
@@ -211,8 +345,8 @@
                   width="272"
                 />
                 <div class="body">
-                  <h3 class="title-h3">Tom Ford</h3>
-                  <p class="text">Frontend Developer</p>
+                  <h3>Tom Ford</h3>
+                  <p>Frontend Developer</p>
                   <div class="social-icon-holder">
                     <a
                       href="https://www.instagram.com/"
@@ -272,8 +406,8 @@
                   width="272"
                 />
                 <div class="body">
-                  <h3 class="title-h3">Camila Garcia</h3>
-                  <p class="text">Marketing</p>
+                  <h3>Camila Garcia</h3>
+                  <p>Marketing</p>
                   <div class="social-icon-holder">
                     <a
                       href="https://www.instagram.com/"
@@ -333,8 +467,8 @@
                   width="272"
                 />
                 <div class="body">
-                  <h3 class="title-h3">Daniel Wilson</h3>
-                  <p class="text">UI Designer</p>
+                  <h3>Daniel Wilson</h3>
+                  <p>UI Designer</p>
                   <div class="social-icon-holder">
                     <a
                       href="https://www.instagram.com/"
@@ -393,8 +527,8 @@
         <!-- Section: Customers -->
         <section class="section section-padding">
           <div class="container-column">
-            <h2 class="title-h2">Customers</h2>
-            <div class="our-team-cards">
+            <h2>Customers</h2>
+            <div class="our-team-cards padding-top">
               <ul class="cards">
                 <li>
                   <div class="customers-icon-holder">
@@ -459,19 +593,21 @@
       <footer class="footer">
         <div class="footer-container">
           <div class="footer-card">
-            <div class="logo">
-              <a href="/index.html"
-                ><span class="logo-text">Web</span
-                ><span class="dark-bkg">Studio</span></a
-              >
+            <div class="footer-card-title">
+              <div class="logo">
+                <a href="/index.html"
+                  ><span class="web">Web</span
+                  ><span class="dark-bkg">Studio</span></a
+                >
+              </div>
             </div>
-            <p class="text dark-bkg">
+            <p class="dark-bkg">
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
             </p>
           </div>
           <div class="footer-card">
-            <p class="navigation dark-bkg">Social media</p>
+            <p class="footer-card-title navigation dark-bkg">Social media</p>
             <div class="social-icon-holder">
               <a
                 href="https://www.instagram.com/"
@@ -511,10 +647,15 @@
               </a>
             </div>
           </div>
-          <form class="form" name="signup_form" autocomplete="on" novalidate>
+          <form
+            class="footer-form footer-card"
+            name="signup_form"
+            autocomplete="on"
+            novalidate
+          >
             <fieldset class="form-group-footer">
-              <legend class="navigation dark-bkg">Subscribe</legend>
-              <label class="form-label">
+              <p class="footer-card-title navigation dark-bkg">Subscribe</p>
+              <label>
                 <input
                   type="email"
                   name="email"
@@ -523,15 +664,16 @@
                 />
               </label>
             </fieldset>
-            <button
-              type="submit"
-              class="button-position subscribe-button button-text"
-            >
-              Subscribe
-              <svg class="">
-                <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <div class="footer-button">
+              <button type="submit" class="subscribe-button button-text">
+                <span class="button-text-subscribe">Subscribe</span>
+                <span class="button-icon">
+                  <svg class="subscribe-icon">
+                    <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </form>
         </div>
       </footer>
@@ -539,7 +681,9 @@
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="close-btn" data-modal-close>
-          <span class="close">&times;</span>
+          <svg>
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
+          </svg>
         </button>
         <form class="form" name="signup_form" autocomplete="on" novalidate>
           <fieldset class="form-group">
@@ -605,6 +749,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
